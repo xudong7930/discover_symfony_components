@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+
+<?php
+require 'vendor/autoload.php';
+
+
+use Acme\SpeakCommand;
+use Symfony\Component\Console\Application;
+
+$app = new Application('Foobar', "1.0.23");
+$app->add(new SpeakCommand);
+$app->run();
